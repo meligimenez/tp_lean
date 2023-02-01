@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ header {
+  background-image: url(../img/logo.jpg); 
+  width: 100%;
+  height: 400px;
+  display: flex;
+  grid-area: header;
+  z-index: -1;
+}
+.menu {
+  background-color: aliceblue;
+  height: 22px;
+  display: inline-block;
+  grid-area: menu;
+  margin: 0px 50px;
+}
+h1 {
+  color: rgb(241, 7, 7);
+  text-align: center;
+  padding: 10px;
+  font-size: 50px;
+
+}
+
+
+a {
+  margin: 10px;
+  height: 100px;
+  text-decoration: none;
+  /*elimina el subrrallado*/
+  text-transform: uppercase;
+  /*coloca en MAYUSCULA*/
+}
+li {
+  list-style-type: none;
+}
+
+.contenedor{
+  background-color: bisque;
+  width: 100%;
+  height: 100%; 
+}
+.gridPadre{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "aside A A"
+  "aside B B"
+  "foter footer footer";
+}
+img {
+  margin: 0;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border: 1px black solid;
+  grid-area: img;
+}
+img:hover{
+  height: 250px;
+
+}
+.primero{
+  grid-area: A;
+}
+.segundo{
+  grid-area: B;
+}
+aside{
+  border: 1px black solid;
+  width: 300px;
+  height: 500px;
+  background-color: aqua;
+  margin: 0px;
+  padding: 10px;
+  grid-area: aside;
+}
+footer{
+  width: 100%;
+  height: 200px;
+  margin: 0px;
+  text-align: center;
+  font-size: 30px;
+  grid-area: footer;
+  background-color:coral;
+  color: aliceblue;
+}
+
+
+
+
+
